@@ -38,5 +38,18 @@ public class Main {
         System.out.println("Seu nome é: " + nome +
                 "\nSua idade é: " + idade +
                 "\nSua comida favorita é: " + comida);
+
+        //---Calculo da hipotenusa---
+        double catop;
+        double catad;
+        double hip;
+
+        System.out.println("Insira o cateto oposto");
+        catop = scanner.nextDouble();
+        System.out.println("Insira o cateto adjacente");
+        catad = scanner.nextDouble();
+        // A variávek 'hip' é facultativa, esta mesma expressão poderia estar sendo utilizada diretamente no sout a seguir.
+        hip = Math.sqrt((catop * catop) + (catad * catad));
+        System.out.println("A hipotenusa é: " + hip);
     }
 }
