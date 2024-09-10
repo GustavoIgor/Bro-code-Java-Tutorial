@@ -33,7 +33,25 @@ public class Main {
         */
 
         //Switch utilizada para todos os códigos apresentados (menos o primeiro pelo motivo citado).
-        System.out.println("Faça sua escolha: ");
+        System.out.println("1  - Troca de duas variáveis\n" +
+                "2  - Teste de input e output\n" +
+                "3  - Cálculo da hipotenusa\n" +
+                "4  - Condições\n" +
+                "5  - Operadores lógicos\n" +
+                "6  - Repedidor while\n" +
+                "7  - Repedidor for com fibonacci\n" +
+                "8  - Loop dentro de outro loop\n" +
+                "9  - Arrays\n" +
+                "10 - Matrizes / Arrays com duas camadas\n" +
+                "11 - Métodos da String\n" +
+                "12 - Classes empacotadoras / wrapper classes\n" +
+                "13 - ArrayList\n" +
+                "14 - ArrayList com duas dimensões\n" +
+                "15 - For-each\n" +
+                "16 - Funções / métodos\n" +
+                "17 - Overload\n" +
+                "18 - Printf\n" +
+                "Faça sua escolha, digite:\n");
         escolha = scanner.nextInt();
         //Limpando o Scanner
         scanner.nextLine();
@@ -304,7 +322,7 @@ public class Main {
                             System.out.println("Insira qual posição do item que queres mudar: ");
                             num1 = scanner.nextInt();
                             scanner.nextLine();
-                            System.out.println("O item que queres mudar é o: " + comidas.get(num1) + ". Insira o novo item que irá substituí-lo: ");
+                            System.out.println("O item que queres mudar é o/a: " + comidas.get(num1) + ". Insira o novo item que irá substituí-lo/a: ");
                             x = scanner.nextLine();
                             comidas.set(num1, x);
                             escolha = 1;
@@ -339,7 +357,6 @@ public class Main {
                 break;
 
             case 14:
-                //todo array de 2 dimensões
                 //ArrayList 2 dimensões.
                 escolha = 1;
                 while (escolha != -1){
@@ -352,47 +369,47 @@ public class Main {
                             while (escolhinha != -1){
                                 switch (escolhinha){
                                     case 1:
-                                        System.out.println("\n\nInsira o que deseja fazer com a lista de comidas: \n" +
+                                        System.out.println("\n\nInsira o que deseja fazer com a lista de frutas: \n" +
                                                 "Voltar ao menu = digite '1'\n" +
-                                                "Ver a lista de comidas = digite '2'\n" +
-                                                "Inserir uma comida = digite '3'\n" +
+                                                "Ver a lista de frutas = digite '2'\n" +
+                                                "Inserir uma nova fruta = digite '3'\n" +
                                                 "Mudar um item da lista = digite '4'\n" +
                                                 "Retirar um item da lista = digite '5'\n" +
                                                 "Excluir todos os itens da lista = digite '6'\n" +
-                                                "Sair = digite '-1'\n\n");
+                                                "Sair = digite '-1'\n");
                                         escolhinha = scanner.nextInt();
                                         scanner.nextLine();
                                         break;
                                     case 2:
-                                        for (i = 0; i < comidas.size(); i++){
-                                            System.out.println(comidas.get(i));
+                                        for (i = 0; i < alimentos.getFirst().size(); i++){
+                                            System.out.println(alimentos.getFirst().get(i));
                                         }
                                         escolhinha = 1;
                                         break;
                                     case 3:
                                         System.out.println("Insira a nova comida: ");
                                         x = scanner.nextLine();
-                                        comidas.add(x);
+                                        alimentos.getFirst().add(x);
                                         escolhinha = 1;
                                         break;
                                     case 4:
                                         System.out.println("Insira qual posição do item que queres mudar: ");
                                         num1 = scanner.nextInt();
                                         scanner.nextLine();
-                                        System.out.println("O item que queres mudar é o: " + comidas.get(num1) + ". Insira o novo item que irá substituí-lo: ");
+                                        System.out.println("O item que queres mudar é o: " + alimentos.getFirst().get(num1) + ". Insira o novo item que irá substituí-lo: ");
                                         x = scanner.nextLine();
-                                        comidas.set(num1, x);
+                                        alimentos.getFirst().set(num1, x);
                                         escolhinha = 1;
                                         break;
                                     case 5:
                                         System.out.println("Insira qual posição do item que queres deletar: ");
                                         num1 = scanner.nextInt();
                                         scanner.nextLine();
-                                        System.out.println("O item que queres deletar é o: " + comidas.get(num1) + ". Está certo disso? Digite:\n 1 = Sim | 2 = Não");
+                                        System.out.println("O item que queres deletar é o/a: " + alimentos.getFirst().get(num1) + ". Está certo disso? Digite:\n 1 = Sim | 2 = Não");
                                         escolhinha = scanner.nextInt();
                                         scanner.nextLine();
                                         if (escolhinha == 1){
-                                            comidas.remove(num1);
+                                            alimentos.getFirst().remove(num1);
                                         }
                                         escolhinha = 1;
                                         break;
@@ -401,7 +418,7 @@ public class Main {
                                         escolhinha = scanner.nextInt();
                                         scanner.nextLine();
                                         if (escolhinha == 1){
-                                            comidas.clear();
+                                            alimentos.getFirst().clear();
                                         }
                                         escolhinha = 1;
                                         break;
@@ -417,10 +434,10 @@ public class Main {
                             while (escolhinha != -1){
                                 switch (escolhinha){
                                     case 1:
-                                        System.out.println("\n\nInsira o que deseja fazer com a lista de comidas: \n" +
+                                        System.out.println("\n\nInsira o que deseja fazer com a lista de verduras: \n" +
                                                 "Voltar ao menu = digite '1'\n" +
-                                                "Ver a lista de comidas = digite '2'\n" +
-                                                "Inserir uma comida = digite '3'\n" +
+                                                "Ver a lista de verduras = digite '2'\n" +
+                                                "Inserir uma verdura = digite '3'\n" +
                                                 "Mudar um item da lista = digite '4'\n" +
                                                 "Retirar um item da lista = digite '5'\n" +
                                                 "Excluir todos os itens da lista = digite '6'\n" +
@@ -429,35 +446,35 @@ public class Main {
                                         scanner.nextLine();
                                         break;
                                     case 2:
-                                        for (i = 0; i < comidas.size(); i++){
-                                            System.out.println(comidas.get(i));
+                                        for (i = 0; i < alimentos.get(1).size(); i++){
+                                            System.out.println(alimentos.get(1).get(i));
                                         }
                                         escolhinha = 1;
                                         break;
                                     case 3:
                                         System.out.println("Insira a nova comida: ");
                                         x = scanner.nextLine();
-                                        comidas.add(x);
+                                        alimentos.get(1).add(x);
                                         escolhinha = 1;
                                         break;
                                     case 4:
                                         System.out.println("Insira qual posição do item que queres mudar: ");
                                         num1 = scanner.nextInt();
                                         scanner.nextLine();
-                                        System.out.println("O item que queres mudar é o: " + comidas.get(num1) + ". Insira o novo item que irá substituí-lo: ");
+                                        System.out.println("O item que queres mudar é o: " + alimentos.get(1).get(num1) + ". Insira o novo item que irá substituí-lo: ");
                                         x = scanner.nextLine();
-                                        comidas.set(num1, x);
+                                        alimentos.get(1).set(num1, x);
                                         escolhinha = 1;
                                         break;
                                     case 5:
                                         System.out.println("Insira qual posição do item que queres deletar: ");
                                         num1 = scanner.nextInt();
                                         scanner.nextLine();
-                                        System.out.println("O item que queres deletar é o: " + comidas.get(num1) + ". Está certo disso? Digite:\n 1 = Sim | 2 = Não");
+                                        System.out.println("O item que queres deletar é o: " + alimentos.get(1).get(num1) + ". Está certo disso? Digite:\n 1 = Sim | 2 = Não");
                                         escolhinha = scanner.nextInt();
                                         scanner.nextLine();
                                         if (escolhinha == 1){
-                                            comidas.remove(num1);
+                                            alimentos.get(1).remove(num1);
                                         }
                                         escolhinha = 1;
                                         break;
@@ -466,7 +483,7 @@ public class Main {
                                         escolhinha = scanner.nextInt();
                                         scanner.nextLine();
                                         if (escolhinha == 1){
-                                            comidas.clear();
+                                            alimentos.get(1).clear();
                                         }
                                         escolhinha = 1;
                                         break;
@@ -482,10 +499,10 @@ public class Main {
                             while (escolhinha != -1){
                                 switch (escolhinha){
                                     case 1:
-                                        System.out.println("\n\nInsira o que deseja fazer com a lista de comidas: \n" +
+                                        System.out.println("\n\nInsira o que deseja fazer com a lista de legumes: \n" +
                                                 "Voltar ao menu = digite '1'\n" +
-                                                "Ver a lista de comidas = digite '2'\n" +
-                                                "Inserir uma comida = digite '3'\n" +
+                                                "Ver a lista de legumes = digite '2'\n" +
+                                                "Inserir uma legume = digite '3'\n" +
                                                 "Mudar um item da lista = digite '4'\n" +
                                                 "Retirar um item da lista = digite '5'\n" +
                                                 "Excluir todos os itens da lista = digite '6'\n" +
@@ -494,35 +511,35 @@ public class Main {
                                         scanner.nextLine();
                                         break;
                                     case 2:
-                                        for (i = 0; i < comidas.size(); i++){
-                                            System.out.println(comidas.get(i));
+                                        for (i = 0; i < alimentos.get(2).size(); i++){
+                                            System.out.println(alimentos.get(2).get(i));
                                         }
                                         escolhinha = 1;
                                         break;
                                     case 3:
                                         System.out.println("Insira a nova comida: ");
                                         x = scanner.nextLine();
-                                        comidas.add(x);
+                                        alimentos.get(2).add(x);
                                         escolhinha = 1;
                                         break;
                                     case 4:
                                         System.out.println("Insira qual posição do item que queres mudar: ");
                                         num1 = scanner.nextInt();
                                         scanner.nextLine();
-                                        System.out.println("O item que queres mudar é o: " + comidas.get(num1) + ". Insira o novo item que irá substituí-lo: ");
+                                        System.out.println("O item que queres mudar é o: " + alimentos.get(2).get(num1) + ". Insira o novo item que irá substituí-lo: ");
                                         x = scanner.nextLine();
-                                        comidas.set(num1, x);
+                                        alimentos.get(2).set(num1, x);
                                         escolhinha = 1;
                                         break;
                                     case 5:
                                         System.out.println("Insira qual posição do item que queres deletar: ");
                                         num1 = scanner.nextInt();
                                         scanner.nextLine();
-                                        System.out.println("O item que queres deletar é o: " + comidas.get(num1) + ". Está certo disso? Digite:\n 1 = Sim | 2 = Não");
+                                        System.out.println("O item que queres deletar é o: " + alimentos.get(2).get(num1) + ". Está certo disso? Digite:\n 1 = Sim | 2 = Não");
                                         escolhinha = scanner.nextInt();
                                         scanner.nextLine();
                                         if (escolhinha == 1){
-                                            comidas.remove(num1);
+                                            alimentos.get(2).remove(num1);
                                         }
                                         escolhinha = 1;
                                         break;
@@ -531,7 +548,7 @@ public class Main {
                                         escolhinha = scanner.nextInt();
                                         scanner.nextLine();
                                         if (escolhinha == 1){
-                                            comidas.clear();
+                                            alimentos.get(2).clear();
                                         }
                                         escolhinha = 1;
                                         break;

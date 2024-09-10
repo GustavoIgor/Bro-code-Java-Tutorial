@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a8e48b5-cae1-43a8-811d-fe85243e6253" name="Changes" comment="Segunda hora do curso completa.">
+    <list default="true" id="4a8e48b5-cae1-43a8-811d-fe85243e6253" name="Changes" comment="Terceira hora do curso completa, resta o case 14 (array de 2 dimensões) mais a melhora do layout principal.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -28,6 +28,9 @@
     &quot;accountId&quot;: &quot;a8c14558-c265-46d9-91f6-9333e43be9f4&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -87,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725740341274</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Terceira hora do curso completa, resta o case 14 (array de 2 dimensões) mais a melhora do layout principal.">
+      <option name="closed" value="true" />
+      <created>1725868609636</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725868609636</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +117,7 @@
     <MESSAGE value="Adicionado o cálculo da hipotenusa com os devidos comentários." />
     <MESSAGE value="Feitos os exercicios até a parte dos arrays e melhoras no código" />
     <MESSAGE value="Segunda hora do curso completa." />
-    <option name="LAST_COMMIT_MESSAGE" value="Segunda hora do curso completa." />
+    <MESSAGE value="Terceira hora do curso completa, resta o case 14 (array de 2 dimensões) mais a melhora do layout principal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Terceira hora do curso completa, resta o case 14 (array de 2 dimensões) mais a melhora do layout principal." />
   </component>
 </project>
