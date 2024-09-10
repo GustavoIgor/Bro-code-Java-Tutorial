@@ -6,7 +6,7 @@
  - expressões<br>
  - GUI<br>
  - Números aleatorios (não implementada)<br>
- - is e else<br>
+ - if e else<br>
  - switches<br>
  - Operadores lógicos<br>
  - while loop<br>
